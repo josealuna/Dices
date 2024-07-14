@@ -22,6 +22,27 @@ PoolOfDadosTest >> setUp [
 ]
 
 { #category : 'tests' }
+PoolOfDadosTest >> testD [
+	
+	| p |
+	 p := 2 D: 4.
+	self assert: p dados size equals: 2.
+	self assert: p max equals: 8.
+	1 to: 100 do: [ :i | self assert: (p roll between: 1 and: (p max))]
+]
+
+{ #category : 'tests' }
+PoolOfDadosTest >> testD4 [
+	
+	| p  n|
+	n := 10 atRandom.
+	p := n D4.
+	self assert: p dados size equals: n.
+	self assert: p max equals: n * 4.
+	1 to: 100 do: [ :i | self assert: (p roll between: 1 and: (p max))]
+]
+
+{ #category : 'tests' }
 PoolOfDadosTest >> testInitialize [
 
 	|  p |
