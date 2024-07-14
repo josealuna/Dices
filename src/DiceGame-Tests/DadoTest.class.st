@@ -6,6 +6,14 @@ Class {
 }
 
 { #category : 'tests' }
+DadoTest >> testCreation [
+
+	| d |
+	d := Dado withFaces: 6.
+	self assert: d faces equals: 6.
+]
+
+{ #category : 'tests' }
 DadoTest >> testRoll [
 
 	| d |

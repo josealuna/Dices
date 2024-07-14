@@ -22,6 +22,14 @@ PoolOfDadosTest >> setUp [
 ]
 
 { #category : 'tests' }
+PoolOfDadosTest >> testInitialize [
+
+	|  p |
+	p := PoolOfDados new.
+	self assert: p dados isNotNil .
+]
+
+{ #category : 'tests' }
 PoolOfDadosTest >> testMax [
 
 	self assert: pool max equals: 12

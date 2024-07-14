@@ -11,6 +11,14 @@ Class {
 	#package : 'DiceGame'
 }
 
+{ #category : 'creating' }
+Dado class >> withFaces: anInteger [
+	"comment stating purpose of class-side method"
+	"scope: class-variables  &  class-instance-variables"
+
+	^ self new faces: anInteger
+]
+
 { #category : 'accessing' }
 Dado >> faces [
 
