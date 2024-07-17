@@ -28,6 +28,21 @@ Dado >> + aCanBeAdded [
 	
 ]
 
+{ #category : 'adding' }
+Dado >> addFromDado: aDice [
+   " We must create a new pool and put both of the dices."
+	^ PoolOfDados new 
+		add: self;
+		add: aDice;
+		yourself 
+]
+
+{ #category : 'adding' }
+Dado >> addFromPool: aPool [
+
+	^ aPool add: self; yourself 
+]
+
 { #category : 'accessing' }
 Dado >> faces [
 

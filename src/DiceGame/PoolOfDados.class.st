@@ -35,6 +35,12 @@ PoolOfDados >> add: aDado [
 ]
 
 { #category : 'adding' }
+PoolOfDados >> addFromDado: aDice [
+
+	^ self add: aDice; yourself 
+]
+
+{ #category : 'adding' }
 PoolOfDados >> addFromPool: aPool [
 
 	"We have to put toguether all the data to create a new poolofDados"

@@ -23,3 +23,8 @@ CanBeAdded >> addFromPool: aPool [
 
 	self subclassResponsibility 
 ]
+
+{ #category : 'as yet unclassified' }
+CanBeAdded >> roll [
+	^ self subclassResponsibility
+]
