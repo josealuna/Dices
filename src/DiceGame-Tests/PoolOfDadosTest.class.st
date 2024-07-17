@@ -22,6 +22,32 @@ PoolOfDadosTest >> setUp [
 ]
 
 { #category : 'tests' }
+PoolOfDadosTest >> testAddingADiceToaPool [
+
+	| d pool2| 
+	 d  := Dado withFaces: 6.
+	 pool2 := d + pool.
+	 self assert: pool2 dados size equals: 3.
+	 self assert: pool2 max equals: 18.
+	 1 to: 100 do: [ :i | self assert: (d roll  between: 1 and: pool2 max) ]
+	
+
+]
+
+{ #category : 'tests' }
+PoolOfDadosTest >> testAddingAPoolToaDice [
+
+	| d pool2| 
+	 d  := Dado withFaces: 6.
+	 pool2 := pool + d.
+	 self assert: pool2 dados size equals: 3.
+	 self assert: pool2 max equals: 18.
+	 1 to: 100 do: [ :i | self assert: (d roll  between: 1 and: pool2 max) ]
+	
+
+]
+
+{ #category : 'tests' }
 PoolOfDadosTest >> testD [
 	
 	| p |

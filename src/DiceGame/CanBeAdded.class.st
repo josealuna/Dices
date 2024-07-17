@@ -12,6 +12,11 @@ Class {
 	#tag : 'Base'
 }
 
+{ #category : 'actions' }
+CanBeAdded >> + aCanBeAdded [
+	^ self subclassResponsibility
+]
+
 { #category : 'adding' }
 CanBeAdded >> addFromDado: aDice [
 
@@ -24,7 +29,7 @@ CanBeAdded >> addFromPool: aPool [
 	self subclassResponsibility 
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'actions' }
 CanBeAdded >> roll [
 	^ self subclassResponsibility
 ]

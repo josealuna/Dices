@@ -12,7 +12,9 @@ DadoTest >> testAddingTwoDices [
 	 d  := Dado withFaces: 6.
 	 d1 := Dado withFaces: 4.
 	 pool2 := d addFromDado: d1.
-	 1 to: 100 do: [ :i | self assert: (d roll  between: 1 and: 6) ]
+	 self assert: pool2 dados size equals: 2.
+	 self assert: pool2 max equals: 10.
+	 1 to: 100 do: [ :i | self assert: (d roll  between: 1 and: pool2 max) ]
 	
 ]
 
