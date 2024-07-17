@@ -3,12 +3,13 @@ Dado represents a basic dice. Its responsabilitate is to generate using the mess
 "
 Class {
 	#name : 'Dado',
-	#superclass : 'Object',
+	#superclass : 'CanBeAdded',
 	#instVars : [
 		'faces'
 	],
-	#category : 'DiceGame',
-	#package : 'DiceGame'
+	#category : 'DiceGame-Base',
+	#package : 'DiceGame',
+	#tag : 'Base'
 }
 
 { #category : 'creating' }
@@ -17,6 +18,14 @@ Dado class >> withFaces: anInteger [
 	"scope: class-variables  &  class-instance-variables"
 
 	^ self new faces: anInteger
+]
+
+{ #category : 'accessing' }
+Dado >> + aCanBeAdded [
+
+
+	^ self addFromDado: aCanBeAdded 
+	
 ]
 
 { #category : 'accessing' }
