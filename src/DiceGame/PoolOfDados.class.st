@@ -2,9 +2,9 @@
 Un pool of dice. Its main resposanbility is to roll to use each roll method of the collection it has.
 
 [x] add pools of dices
-[ ] add dices to get a pool of dices
-[ ] add a dice to a pool to get a pool
-[ ] add a pool to a dice and get a pool. 
+[x] add dices to get a pool of dices
+[x] add a dice to a pool to get a pool
+[x] add a pool to a dice and get a pool. 
 
 All this can be done using double dispatching. Dices and pools must have two new methods
  - addFromDado: aDice
