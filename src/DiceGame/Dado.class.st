@@ -20,11 +20,11 @@ Dado class >> withFaces: anInteger [
 	^ self new faces: anInteger
 ]
 
-{ #category : 'accessing' }
+{ #category : 'actions' }
 Dado >> + aCanBeAdded [
 
 
-	^ self addFromDado: aCanBeAdded 
+	^ aCanBeAdded addFromDado: self 
 	
 ]
 

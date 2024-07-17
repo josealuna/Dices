@@ -21,10 +21,10 @@ Class {
 	#tag : 'Base'
 }
 
-{ #category : 'initialization' }
+{ #category : 'actions' }
 PoolOfDados >> + aPoolOfDados [
 	"We have to put toguether all the data to create a new poolofDados"
-	^ self addFromPool: aPoolOfDados
+	^ aPoolOfDados addFromPool: self
 	
 ]
 
