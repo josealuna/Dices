@@ -12,7 +12,7 @@ All this can be done using double dispatching. Dices and pools must have two new
 "
 Class {
 	#name : 'PoolOfDados',
-	#superclass : 'CanBeAdded',
+	#superclass : 'RollingToy',
 	#instVars : [
 		'dados'
 	],

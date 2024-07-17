@@ -3,7 +3,7 @@ Dado represents a basic dice. Its responsabilitate is to generate using the mess
 "
 Class {
 	#name : 'Dado',
-	#superclass : 'CanBeAdded',
+	#superclass : 'RollingToy',
 	#instVars : [
 		'faces'
 	],

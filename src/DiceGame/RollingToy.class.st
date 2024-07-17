@@ -5,7 +5,7 @@ addFromDado: aDice
 addFromPool: aPool
 "
 Class {
-	#name : 'CanBeAdded',
+	#name : 'RollingToy',
 	#superclass : 'Object',
 	#category : 'DiceGame-Base',
 	#package : 'DiceGame',
@@ -13,23 +13,23 @@ Class {
 }
 
 { #category : 'actions' }
-CanBeAdded >> + aCanBeAdded [
+RollingToy >> + aCanBeAdded [
 	^ self subclassResponsibility
 ]
 
 { #category : 'adding' }
-CanBeAdded >> addFromDado: aDice [
+RollingToy >> addFromDado: aDice [
 
 	self subclassResponsibility 
 ]
 
 { #category : 'adding' }
-CanBeAdded >> addFromPool: aPool [
+RollingToy >> addFromPool: aPool [
 
 	self subclassResponsibility 
 ]
 
 { #category : 'actions' }
-CanBeAdded >> roll [
+RollingToy >> roll [
 	^ self subclassResponsibility
 ]
